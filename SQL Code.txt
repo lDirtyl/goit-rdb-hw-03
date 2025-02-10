@@ -1,0 +1,28 @@
+1 Task
+1.1
+
+SELECT * FROM rdb_task_3.products;
+
+1.2 
+
+select name, phone from rdb_task_3.shippers;
+
+2 Task
+
+select avg(price), min(price), max(price) from rdb_task_3.products;
+
+3 Task
+
+select category_id, price from rdb_task_3.products
+order by price desc
+limit 10;
+
+4 Task
+
+select count(*) from rdb_task_3.products
+where price>20 and price<100;
+
+5 Task
+
+select supplier_id, count(id) as products_count, avg(price) as avg_price from rdb_task_3.products
+group by supplier_id;
